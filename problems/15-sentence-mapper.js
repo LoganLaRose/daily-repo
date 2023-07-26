@@ -27,6 +27,14 @@ console.log(result2); // 'ths s prtty cl rght'
 
 let sentenceMapper = function (sentence, cb) {
   // Your code here
+  let newsentence = sentence.split(' ')
+  let result= [];
+  for(let i=0;i<newsentence.length;i++){
+  let rev = cb(newsentence[i])
+   result.push(rev)
+
+  }
+  return result.join(' ')
 };
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
